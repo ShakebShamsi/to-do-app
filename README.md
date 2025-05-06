@@ -30,5 +30,5 @@ ToDoApp/
       Task categorization or filtering
       Dark mode toggle
 
-👨‍💻 Author
+👨‍💻 Author:
   Shakeb Shamsi
