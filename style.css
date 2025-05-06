@@ -80,6 +80,10 @@ h1 {
     transition: 0.3s;
 }
 
+#toDoList li.completed {
+    background-color: #d1ffd6;
+    color: #999;
+}
 #toDoList li.completed>span {
     background-color: #d1ffd6;
     text-decoration: line-through;
