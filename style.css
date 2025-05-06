@@ -1,92 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
-    background-color: #8fbce5;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #fdf6f0, #f8e8e0);
     height: 100vh;
     margin: 0;
-    background: linear-gradient(165deg, #ffc7c7, #e3aabb, #c590ae, #a6779f, #86608e, #654b7b, #433768, #1a2656);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    max-width: 400px;
-    margin: auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background: linear-gradient(150deg, #f9f9f9, #d4dad6, #afbbb6, #8b9d9b, #698083, #49636f, #2c475c, #142b4e);
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
 }
 
-#inputTask{
-    padding:5px;
-    border-radius: 7px;
-    border: none;
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#inputTask {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 65%;
+    font-size: 16px;
+    outline: none;
+    transition: 0.2s;
 }
 
 #inputTask:focus {
-    border-color: #5c9ded;
-    outline: none;
+    border-color: #00c6ff;
 }
 
-#addTaskButton{
-    padding:5px;
-    border-radius: 7px;
-    border: none;
+#addTaskButton {
+    padding: 10px 16px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
     color: white;
-    background: linear-gradient(15deg, #142850, #14365f, #13476f, #125d80, #107792, #0d96a5, #09b8b4, #04ccb1);
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
 #addTaskButton:hover {
-    background-color: #4687d6;
+    background: linear-gradient(135deg, #0072ff, #005bb5);
 }
 
 #toDoList {
     list-style: none;
     padding: 0;
+    margin-top: 20px;
 }
 
 #toDoList li {
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #b17d7d;
-    padding: 7px 10px;
-    margin: 10px;
-    border-radius: 4px;
-    width: 350px;
-    transition: background-color 0.3s;
-    cursor: pointer;
-    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
-#toDoList li.completed {
-    color: #999;
-    background-color: #d7ffd7;
-}
 #toDoList li.completed>span {
-    text-decoration: line-through 2px;
+    background-color: #d1ffd6;
+    text-decoration: line-through;
     color: #999;
-    background-color: #d7ffd7;
 }
 
 #toDoList li button {
     background-color: #ff4d4d;
-    color: white;
     border: none;
-    padding: 6px 10px;
-    border-radius: 4px;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
     cursor: pointer;
+    font-size: 14px;
     transition: background-color 0.2s;
 }
 
 #toDoList li button:hover {
-    background-color: #cc0000;
+    background-color: #d63636;
 }
