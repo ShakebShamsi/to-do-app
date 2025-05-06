@@ -1,0 +1,92 @@
+body {
+    background-color: #8fbce5;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(165deg, #ffc7c7, #e3aabb, #c590ae, #a6779f, #86608e, #654b7b, #433768, #1a2656);
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: linear-gradient(150deg, #f9f9f9, #d4dad6, #afbbb6, #8b9d9b, #698083, #49636f, #2c475c, #142b4e);
+}
+
+#inputTask{
+    padding:5px;
+    border-radius: 7px;
+    border: none;
+}
+
+#inputTask:focus {
+    border-color: #5c9ded;
+    outline: none;
+}
+
+#addTaskButton{
+    padding:5px;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    background: linear-gradient(15deg, #142850, #14365f, #13476f, #125d80, #107792, #0d96a5, #09b8b4, #04ccb1);
+}
+
+#addTaskButton:hover {
+    background-color: #4687d6;
+}
+
+#toDoList {
+    list-style: none;
+    padding: 0;
+}
+
+#toDoList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b17d7d;
+    padding: 7px 10px;
+    margin: 10px;
+    border-radius: 4px;
+    width: 350px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#toDoList li.completed {
+    color: #999;
+    background-color: #d7ffd7;
+}
+#toDoList li.completed>span {
+    text-decoration: line-through 2px;
+    color: #999;
+    background-color: #d7ffd7;
+}
+
+#toDoList li button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#toDoList li button:hover {
+    background-color: #cc0000;
+}
