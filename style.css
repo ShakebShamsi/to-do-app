@@ -104,3 +104,30 @@ h1 {
 #toDoList li button:hover {
     background-color: #d63636;
 }
+
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .container {
+        padding: 15px;
+    }
+
+    .inputContainer {
+        flex-direction: column;
+    }
+
+    #inputTask,
+    #addTaskButton {
+        width: 100%;
+    }
+
+    #toDoList li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #toDoList li button {
+        margin-left: 0;
+        margin-top: 7px;
+    }
+}
